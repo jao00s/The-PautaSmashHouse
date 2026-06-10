@@ -63,8 +63,8 @@ nav a{
 .perfil{
     display:flex;
     align-items:center;
+    gap:10px;
 }
-
 .perfil i{
     color:#FFD700;
     font-size:52px;
@@ -101,10 +101,10 @@ main{
 
 h1{
     color:#FFD700;
-    font-size:95px;
+    font-size: clamp(50px, 8vw, 95px);
     font-family:'Cormorant Garamond', serif;
     font-weight:400;
-    line-height:100px;
+    line-height: 1.1;
 }
 
 .descricao{
@@ -114,7 +114,7 @@ h1{
 }
 
 button{
-    margin-top:40px;
+    
 
     background:#FFD700;
     color:black;
@@ -139,13 +139,6 @@ button:hover{
     background-image: url(../img/fundoinicio.png);
     width:850px;
 }
-
-
-
-
-
-
-
 
 
 .sobre{
@@ -315,21 +308,136 @@ html {
     scroll-behavior: smooth;
 }
 
-
-#temaBtn{
-    position: absolute;
-    top: 20px;
-    right: 150px;
-    padding: 10px 10px;
+.tema-btn{
+    background: transparent;
     border: none;
-    border-radius: 30px;
+    color: #FFD700;
+    font-size: 32px;
     cursor: pointer;
-    font-size: 16px;
-    background: #000000;
-    color: white;
-    transition: 0.3s;
+    padding: 30px;
+    margin: 0;
 }
 
-#temaBtn:hover{
-    transform: scale(1.05);
+.tema-btn:hover{
+    transform: scale(1.0);
+}
+/* MOBILE */
+@media (max-width: 768px){
+
+    /* Navbar */
+   .navbar{
+    position: relative;
+}
+
+/* Perfil no canto esquerdo */
+.perfil a{
+    position: absolute;
+    left: 15px;
+    top: 15px;
+}
+
+.perfil a i{
+    font-size: 24px;
+}
+
+/* Botão tema no canto direito */
+.tema-btn{
+    position: absolute;
+    right: -130px;
+    top: 15px;
+
+    font-size: 18px;
+    padding: 0;
+}
+
+.tema-btn i{
+    font-size: 24px;
+}
+
+    /* Hero */
+    .hero{
+    background-size: cover;
+    background-position: 70% center;
+}
+
+    .hero .texto{
+        width: 100%;
+    }
+
+    .slogan{
+        font-size: 16px;
+    }
+
+    .hero h1{
+        font-size: 55px;
+        line-height: 60px;
+    }
+
+    .descricao{
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    button{
+        width: 100%;
+        max-width: 300px;
+        font-size: 18px;
+        padding: 15px;
+        margin-top: 20px;
+    }
+
+    /* Sobre nós */
+    .sobre{
+        flex-direction: column;
+        padding: 40px 20px;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .sobre .texto{
+        width: 100%;
+    }
+
+    .sobre h2{
+        font-size: 30px;
+    }
+
+    .sobre h1{
+        font-size: 42px;
+        line-height: 48px;
+    }
+
+    .sobre p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+
+    .chefs{
+        width: 100%;
+    }
+
+    .chefs img{
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .nomes{
+        flex-direction: column;
+        gap: 10px;
+        margin-bottom: 15px;
+    }
+
+    .nomes span{
+        font-size: 18px;
+    }
+
+    /* Footer */
+    footer{
+        padding: 25px 15px;
+        font-size: 16px;
+    }
+
+    .redes i{
+        font-size: 28px;
+    }
 }
