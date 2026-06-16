@@ -331,25 +331,23 @@ html {
   }
 
   
-  .perfil a {
-    position: absolute;
-    left: 15px;
-    top: 15px;
-  }
+  .perfil {
+  position: static;
+}
 
-  .perfil a i {
-    font-size: 24px;
-  }
+.perfil a {
+  position: absolute;
+  left: 15px;
+  top: 15px;
+}
 
-  
-  .tema-btn {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-
-    font-size: 18px;
-    padding: 0;
-  }
+.tema-btn {
+  position: absolute;
+  right: 0;
+  top: 15px;
+  padding: 0;
+  margin: 0;
+}
 
   .tema-btn i {
     font-size: 24px;
