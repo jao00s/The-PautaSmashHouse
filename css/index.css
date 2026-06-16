@@ -314,10 +314,7 @@ html {
   background: transparent;
   border: none;
   color: #ffd700;
-  font-size: 32px;
   cursor: pointer;
-  padding: 30px;
-  margin: 0;
 }
 
 .tema-btn:hover {
@@ -342,16 +339,19 @@ html {
 }
 
 .tema-btn {
-  position: absolute;
-  right: 0;
-  top: 15px;
-  padding: 0;
-  margin: 0;
-}
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: auto;
+    max-width: none;
+    padding: 0;
+    margin: 0;
+  }
 
   .tema-btn i {
     font-size: 24px;
-  }
+  
+}
 
   
   .hero {
@@ -377,13 +377,10 @@ html {
     line-height: 28px;
   }
 
-  button {
-    width: 100%;
-    max-width: 300px;
-    font-size: 18px;
-    padding: 15px;
-    margin-top: 20px;
-  }
+  .btn-cardapio {
+  width: 100%;
+  max-width: 300px;
+}
 
  
   .sobre {
