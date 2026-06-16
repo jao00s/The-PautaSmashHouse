@@ -131,6 +131,8 @@ button:hover {
 .imagem img {
   background-image: url(../img/fundoinicio.png);
   width: 850px;
+  max-width: 850px;
+  height: auto;
 }
 
 .sobre {
@@ -305,9 +307,9 @@ html {
 .tema-btn:hover {
   transform: scale(1);
 }
-/* MOBILE */
+
 @media (max-width: 768px) {
-  /* Navbar */
+  
   .navbar {
     position: relative;
   }
@@ -326,7 +328,7 @@ html {
   
   .tema-btn {
     position: absolute;
-    right: -130px;
+    right: 15px;
     top: 15px;
 
     font-size: 18px;
