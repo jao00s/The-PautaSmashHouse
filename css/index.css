@@ -109,17 +109,20 @@ h1 {
 }
 
 button {
+  background: #ffd700;
+  color: black;
 
-  background-color: #ffd700 !important;
-  color: #000 !important;
   border: none;
+
   padding: 18px 35px;
+
   font-size: 24px;
   font-weight: bold;
+
   cursor: pointer;
+
   transition: 0.3s;
 }
-
 
 button:hover {
   transform: scale(1.05);
@@ -246,6 +249,22 @@ footer {
   padding: 0 60px;
 }
 
+
+.btn-cardapio {
+  background: #ffd700;
+  color: #000;
+  border: none;
+  padding: 18px 35px;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-cardapio:hover {
+  transform: scale(1.05);
+}
+
 @media (max-width: 768px) {
   .navbar {
     flex-direction: column;
@@ -334,7 +353,6 @@ html {
 
   .tema-btn i {
     font-size: 24px;
-    
   }
 
   
@@ -362,8 +380,6 @@ html {
   }
 
   button {
-    background-color: #ffd700 !important;
-    color: #000 !important;
     width: 100%;
     max-width: 300px;
     font-size: 18px;
@@ -424,4 +440,16 @@ html {
   .redes i {
     font-size: 28px;
   }
+
+  
+  .btn-cardapio {
+    background: #ffd700;
+    color: #000;
+    width: 100%;
+    max-width: 300px;
+    font-size: 18px;
+    padding: 15px;
+    margin-top: 20px;
+  
+}
 }
