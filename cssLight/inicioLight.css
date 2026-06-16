@@ -117,7 +117,7 @@ h1{
 
 button{
    
-    background:#FFD700;
+    background:#ffffff;
     color:black;
     border:none;
     padding:18px 35px;
@@ -265,156 +265,58 @@ footer{
     padding:0 60px;
 }
 
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        height:auto;
-        padding:20px;
-        gap:20px;
-    }
-
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    nav a,
-    .menu span{
-        font-size:20px;
-    }
-
-    .perfil i{
-        font-size:40px;
-    }
-
-    .login-box{
-        width:95%;
-    }
-}
-
-.redes{
-    margin-top:15px;
-
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-.redes i{
-    font-size:32px;
-    color:#FFEA00;
-    cursor:pointer;
-}
-.tema-btn{
-    background: transparent;
-    border: none;
-    color: #000000;
-    font-size: 32px;
-    cursor: pointer;
-    padding: 30px;
-    margin: 0;
-}
-
-.tema-btn:hover{
-    transform: scale(1.0);
-}
-
-@media(max-width:768px){
-
-    .navbar{
-        flex-direction:column;
-        height:auto;
-        padding:20px;
-        gap:20px;
-    }
-
-    .menu{
-        flex-wrap:wrap;
-        justify-content:center;
-    }
-
-    nav a,
-    .menu span{
-        font-size:20px;
-    }
-
-    .perfil i{
-        font-size:40px;
-    }
-
-    .login-box{
-        width:95%;
-    }
-}
-
-.redes{
-    margin-top:15px;
-
-    display:flex;
-    justify-content:center;
-    gap:20px;
-}
-
-.redes i{
-    font-size:32px;
-    color:#FFEA00;
-    cursor:pointer;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-.tema-btn{
-    background: transparent;
-    border: none;
-    color: #FFD700;
-    font-size: 32px;
-    cursor: pointer;
-    padding: 30px;
-    margin: 0;
-}
-
-.tema-btn:hover{
-    transform: scale(1.0);
-}
-
 @media (max-width: 768px){
-   .navbar{
-    position: relative;
-}
 
+    .navbar{
+        position: relative;
+        flex-direction: column;
+        height: auto;
+        padding: 20px;
+        gap: 20px;
+    }
 
-.perfil a{
-    position: absolute;
-    left: 15px;
-    top: 15px;
-}
+    .menu{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
-.perfil a i{
-    font-size: 24px;
-}
+    nav a,
+    .menu span{
+        font-size: 20px;
+    }
 
+    .perfil a{
+        position: absolute;
+        left: 15px;
+        top: 15px;
+    }
 
-.tema-btn{
-    position: absolute;
-    right: -15px;
-    top: 15px;
+    .perfil a i{
+        font-size: 24px;
+    }
 
-    font-size: 18px;
-    padding: 0;
-}
+    .tema-btn{
+        position: absolute;
+        right: 15px;
+        top: 15px;
 
-.tema-btn i{
-    font-size: 24px;
-}
+        background: transparent;
+        border: none;
+        padding: 0;
+        margin: 0;
 
-  
+        width: auto;
+        max-width: none;
+    }
+
+    .tema-btn i{
+        font-size: 24px;
+    }
+
     .hero{
-    background-size: cover;
-    background-position: 70% center;
-}
+        background-size: cover;
+        background-position: 70% center;
+    }
 
     .hero .texto{
         width: 100%;
@@ -442,7 +344,6 @@ html {
         margin-top: 20px;
     }
 
-  
     .sobre{
         flex-direction: column;
         padding: 40px 20px;
@@ -450,7 +351,8 @@ html {
         gap: 30px;
     }
 
-    .sobre .texto{
+    .sobre .texto,
+    .sobreNos{
         width: 100%;
     }
 
@@ -487,7 +389,6 @@ html {
         font-size: 18px;
     }
 
-   
     footer{
         padding: 25px 15px;
         font-size: 16px;
